@@ -12,7 +12,10 @@ import datetime as dt
 import pandas
 import random
 import smtplib
+import os
 
+MY_EMAIL = os.environ.get("MY_EMAIL")
+MY_PASSWORD = os.environ.get("MY_PASSWORD")
 
 now = dt.datetime.now()
 day = now.day
