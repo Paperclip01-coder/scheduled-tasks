@@ -28,7 +28,7 @@ df = pandas.read_csv("birthdays.csv")
 birthday_dict = df.to_dict(orient="records")
 
 for data in birthday_dict:
-    if data["month"] == month and data["day"] == day:
+    if data["month"] == month and data["day"] == day and data["email"] == "AKUN_UTAMA":
         chosen_file = random.choice(letter_list)
         file_path = f"letter_templates/{chosen_file}"
 
