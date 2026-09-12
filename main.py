@@ -38,7 +38,7 @@ for data in birthday_dict:
 
         with smtplib.SMTP("smtp.gmail.com",587) as connection:
             connection.starttls()
-            connection.login(MY_EMAIL,PASSWORD)
+            connection.login(MY_EMAIL,MY_PASSWORD)
             connection.sendmail(
                 from_addr=MY_EMAIL,
                 to_addrs=MY_EMAIL,
